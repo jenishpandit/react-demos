@@ -1,0 +1,93 @@
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .question-container, .result-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .answers-container button {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  button {
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Add these styles to QuizApp.css */
+
+.result-container ul.result-table {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .result-container li.table-header {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+  
+  .result-container li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .result-container li.correct {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .result-container li.incorrect {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .result-container li span {
+    flex: 1;
+    text-align: center;
+  }
+
+.category{
+    width: 400px;
+    height: 40px;
+    display: block;
+    margin-left: 90px;
+    
+}
+  
+.number{
+    width: 380px;
+    height: 20px;
+    display: block;
+    margin-left: 90px;
+}
+  
+
+
