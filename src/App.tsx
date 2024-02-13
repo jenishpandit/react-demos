@@ -11,7 +11,7 @@ import Parallel from './reactQuery/Parallel';
 //import Optimistic from './reactQuery/Optimistic';
 import Dependant from './reactQuery/Dependant';
 import Pagination from './reactQuery/Pagination';
-import Password from './passgenrate/Password'
+import Password from './pass-genrate/Password'
 
 const App = () => {
   return (
