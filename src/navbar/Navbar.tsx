@@ -27,6 +27,9 @@ function Navbar() {
           <NavLink className='nav-bar-links' to='/password'>
             PasswordGenrate
           </NavLink>
+          <NavLink className='nav-bar-links' to='/typing'>
+            TypingSpeed
+          </NavLink>
        
     </div>
     </div>

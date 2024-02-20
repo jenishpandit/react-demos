@@ -12,6 +12,7 @@ import Parallel from './reactQuery/Parallel';
 import Dependant from './reactQuery/Dependant';
 import Pagination from './reactQuery/Pagination';
 import Password from './pass-genrate/Password'
+import TypingSpeed from './typing-speed/TypingSpeed';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/dependent' element={<Dependant/>}/>
         <Route path='/pagination' element={<Pagination/>}/>
         <Route path='/password' element={<Password/>}/>
+        <Route path='/typing' element={<TypingSpeed/>}/>
       </Routes>
       </BrowserRouter>
   )
