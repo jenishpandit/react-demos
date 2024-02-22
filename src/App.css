@@ -26,7 +26,7 @@
 }
 
 .nav-bar-links:hover {
-  background-color: #555;
+  background-color: green;
   color: white;
 }
 
@@ -35,3 +35,4 @@
   display: flex;
   align-items: center;
 }
+

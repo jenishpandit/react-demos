@@ -16,19 +16,22 @@ function Navbar() {
           </NavLink>
         
         
-          <NavLink className='nav-bar-links' to='/quizapp'>
+          <NavLink  className='nav-bar-links' to='/quizapp'>
             Quiz App
           </NavLink>
         
-          <NavLink className='nav-bar-links' to='/products'>
+          <NavLink  className='nav-bar-links' to='/products'>
             React Query
           </NavLink>
 
           <NavLink className='nav-bar-links' to='/password'>
-            PasswordGenrate
+            Password Genrate
           </NavLink>
           <NavLink className='nav-bar-links' to='/typing'>
-            TypingSpeed
+            Typing Speed
+          </NavLink>
+          <NavLink className='nav-bar-links' to='/shorturl'>
+           Short Url
           </NavLink>
        
     </div>
