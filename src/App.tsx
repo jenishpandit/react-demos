@@ -13,6 +13,8 @@ import Dependant from './reactQuery/Dependant';
 import Pagination from './reactQuery/Pagination';
 import Password from './pass-genrate/Password'
 import TypingSpeed from './typing-speed/TypingSpeed';
+import ShortUrl from './short-Url/ShortUrl';
+
 
 const App = () => {
   return (
@@ -30,6 +32,7 @@ const App = () => {
         <Route path='/pagination' element={<Pagination/>}/>
         <Route path='/password' element={<Password/>}/>
         <Route path='/typing' element={<TypingSpeed/>}/>
+        <Route path='/shorturl' element={<ShortUrl/>}/>
       </Routes>
       </BrowserRouter>
   )
