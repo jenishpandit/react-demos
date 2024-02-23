@@ -4,7 +4,6 @@ import './App.css';
 import TodoApp from './TodoApp';
 import Navbar from './navbar/Navbar';
 import QuizApp from './quizApp/QuizApp';
-import Home from './Home';
 import Products from './reactQuery/Products';
 import Product from './reactQuery/Product';
 import Parallel from './reactQuery/Parallel';
@@ -13,7 +12,7 @@ import Dependant from './reactQuery/Dependant';
 import Pagination from './reactQuery/Pagination';
 import Password from './pass-genrate/Password'
 import TypingSpeed from './typing-speed/TypingSpeed';
-import ShortUrl from './short-Url/ShortUrl';
+import ShortUrl from './short-url/ShortUrl';
 
 
 const App = () => {
@@ -21,7 +20,6 @@ const App = () => {
     <BrowserRouter>
     <Navbar/>
       <Routes>
-        <Route path="/" element={< Home/>} />
         <Route path="/todo" element={< TodoApp/>} />
         <Route path="/quizapp" element={<QuizApp />} />
         <Route path="/products" element={<Products/>} />

@@ -95,7 +95,7 @@ const Password: React.FC = () => {
 
     
     return (
-        <div>
+        <div className='background-color: rgb(255 247 237) min-h-screen'>
             <h1 className='text-center justify-center p-4 font-bold text-4xl ' style={{color:'blue '}}>Password Generator App</h1>
             <div className='flex items-center justify-center m-7 p-4 border rounded-lg shadow-md w-1/2' style={{ marginLeft: '350px' }}>
                 <Input

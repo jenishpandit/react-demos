@@ -1,40 +1,39 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { CloseOutlined, LaptopOutlined, LinkOutlined, LockOutlined, QuestionCircleOutlined, UnorderedListOutlined } from '@ant-design/icons';
 
 function Navbar() {
-  return (
-    <div className="navbar-container">
-      <div className='navbar'>
-      
-          {/* <NavLink className='nav-bar-links' to='/'>
-            Home
-          </NavLink> */}
-       
-        
-          <NavLink className='nav-bar-links' to='/todo'>
-            Todo App
-          </NavLink>
-        
-        
-          <NavLink  className='nav-bar-links' to='/quizapp'>
-            Quiz App
-          </NavLink>
-        
-          <NavLink  className='nav-bar-links' to='/products'>
-            React Query
-          </NavLink>
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-          <NavLink className='nav-bar-links' to='/password'>
-            Password Genrate
-          </NavLink>
-          <NavLink className='nav-bar-links' to='/typing'>
-            Typing Speed
-          </NavLink>
-          <NavLink className='nav-bar-links' to='/shorturl'>
-           Short Url
-          </NavLink>
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  return (
+    
+    <div className={`navbar-container ${isSidebarOpen ? 'open' : ''}`}>
+      <div onClick={toggleSidebar}>
+        {isSidebarOpen ? <CloseOutlined  className='toggle'/> :  <UnorderedListOutlined className='list'/>}
+      </div>
+      <div className='navbar'>
+        <span className='text'>Nav Item</span>
+        <NavLink className='nav-bar-links' to='/todo' >
+        <UnorderedListOutlined className='nav-icon' /> Todo App
+        </NavLink>
+        <NavLink className='nav-bar-links' to='/quizapp' >
+        <QuestionCircleOutlined className='nav-icon'/> Quiz App
+        </NavLink>
+        <NavLink className='nav-bar-links' to='/password' >
+        <LockOutlined  className='nav-icon'/> Password Generate
+        </NavLink>
+        <NavLink className='nav-bar-links' to='/typing' >
+        <LaptopOutlined  className='nav-icon'/> Typing Speed
+        </NavLink>
+        <NavLink className='nav-bar-links' to='/shorturl' >
+        <LinkOutlined  className='nav-icon'/> Short Url
+        </NavLink>
        
-    </div>
+      </div>
     </div>
   );
 }
