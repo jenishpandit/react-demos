@@ -3,14 +3,14 @@
   width: 0;
   height: 100%;
   position: fixed;
-  background-color: #111;
+  background-color: #1d123f;
   overflow-x: hidden;
   padding-top: 20px;
   transition: 0.3s;
 }
 
 .navbar-container.open {
-  width: 200px;
+  width: 15%;
 }
 
 .navbar {
@@ -28,22 +28,22 @@
 }
 
 .nav-bar-links:hover {
-  background-color: #555;
+  background-color:#3b3095;
 }
 
 .active{
-  background-color: #555;
+  background-color: #3b3095;
 }
 
 .toggle{
   position: fixed;
-  top: 10px;
+  top: 29px;
   left: 2px;
   z-index: 2;
-  color: lawngreen;
+  color: rgb(255, 255, 255);
   margin-left: 10%;
   font-size: 25px;
-  background-color: #111;
+  background-color:  #1d123f;
   height:30px;
   width: 30px;
   cursor: pointer;
@@ -54,10 +54,10 @@
  top: 10px;
  left: 2px;
  z-index: 2;
- color: lawngreen;
+ color: rgb(255, 255, 255);
  margin-left: 10px;
  font-size: 25px;
- background-color: black;
+ background-color:  #1d123f;
  cursor: pointer;
  height: 30px;
  width: 30px;
@@ -66,7 +66,7 @@
  
 .text{
   color:white;
-  margin-top: -15px;
+  
   font-size: 25px;
   margin-left: 20px;
 }
@@ -74,7 +74,6 @@
 .nav-icon{
   margin-right: 5px;
 }
-
 
 
 

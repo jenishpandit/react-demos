@@ -143,7 +143,7 @@ const TypingSpeed = () => {
   }, [showConfetti]);
 
   return (
-    <div className='p-8 ' style={{ backgroundImage: 'url(https://cdn5.vectorstock.com/i/1000x1000/14/94/colorful-alphabet-seamless-wallpaper-pattern-vector-14201494.jpg)', backgroundSize: 'cover' }}>
+    <div className='p-8  h-screen' style={{ backgroundImage: 'url(https://cdn5.vectorstock.com/i/1000x1000/14/94/colorful-alphabet-seamless-wallpaper-pattern-vector-14201494.jpg)', backgroundSize: 'cover' }}>
       <div className='text-4xl font-bold' style={{ marginLeft: '40%' }}>
         Typing Speed App
       </div>

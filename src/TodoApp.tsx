@@ -83,7 +83,7 @@ const TodoApp = () => {
   return (
     <div className='todo'>
       <div className="top-bar">
-        <h1>My Todo App</h1>
+        <h1 className='text-2xl '>My Todo App</h1>
         <input
           className='search-bar'
           type='text'

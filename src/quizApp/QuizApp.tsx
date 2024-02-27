@@ -132,7 +132,7 @@ const QuizApp = () => {
               onChange={(e) => setNumQuestions(parseInt(e.target.value, 10))}
             />
           </div>
-          <button onClick={startQuiz} disabled={!selectedCategory || numQuestions < 1 || numQuestions > 50}>Start Quiz</button>
+          <button className='btn' onClick={startQuiz} disabled={!selectedCategory || numQuestions < 1 || numQuestions > 50}>Start Quiz</button>
         </div>
       ) : currentQuestionIndex < questions.length ? (
         <div className="question-container">
@@ -141,7 +141,7 @@ const QuizApp = () => {
 
           <div className='answers-container'>
             {_.map([...questions[currentQuestionIndex].incorrect_answers, questions[currentQuestionIndex].correct_answer],(answer,index)=>(
-              <button key={answer} onClick={()=>handleAnswerSubmit(answer)}>
+              <button className='btn' key={answer} onClick={()=>handleAnswerSubmit(answer)}>
                 <span>{index + 1}.</span>{answer}
               </button>  
             ))}
@@ -149,7 +149,7 @@ const QuizApp = () => {
 
           {/* Next button will be shown after the user answers */}
           {userAnswers.length > currentQuestionIndex && (
-            <button onClick={handleNextQuestion}>Next</button>
+            <button className='btn' onClick={handleNextQuestion}>Next</button>
           )}
         </div>
       ) : (
@@ -175,7 +175,7 @@ const QuizApp = () => {
             ))}
           </ul>
 
-          <button onClick={restartQuiz}>Restart Quiz</button>
+          <button className='btn'onClick={restartQuiz}>Restart Quiz</button>
         </div>
       )}
     </div>
